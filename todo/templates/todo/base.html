@@ -18,11 +18,11 @@
 <body>
 
 
-    <nav class="navbar navbar-expand-md navbar-light bg-warning">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'todo/logo.png' %}" width="30" height="30" class="d-inline-block align-top">
-                <span>Todo Woo</span>
+                <span>Todo</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,6 +70,8 @@
         {% block content %}{% endblock %}
     </div>
 
+   
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -82,5 +84,13 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 </body>
+<div class="fixed-bottom">
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; ToDo Ajax Website</small>
+    </div>
+  </footer>
+</div>
+
 
 </html>
